@@ -1,0 +1,91 @@
+<app-header></app-header>
+<div class="homesection">
+<h1 class="main-heading">Css Gradient Store</h1>
+ <div class="d-flex flex-lg-row flex-column justify-content-center">
+    <section class="d-flex flex-lg-row flex-column color-picker-section">
+       <div class="info-container">
+          <span class="info-text">Choose colors</span>
+          <img src="./assets/image/right-arrow.svg" width="80px" height="64px" alt="Right Drawn Arrow" class="arrow d-lg-block d-none right-drawn-arrow"/>
+       </div>
+       <div class="color-pickers-options">
+          <label class="color-picker-container" id="color-picker-container1">
+          <input type="color" class="color-picker" name="color1" value="#051937">
+          </label>
+          <label class="color-picker-container" id="color-picker-container2">
+          <input type="color" class="color-picker" name="color2" value="#A8EB12">
+          </label>
+       </div>
+    </section>
+    <section class="d-flex flex-lg-row flex-column flex-column-reverse angle-picker-section">
+       <div class="angle-picker-options">
+          <div class="angle-picker-circle js-angle-picker">
+             <div class="angle-picker-rectangle">
+                <span class="angle-picker-dot"></span>
+             </div>
+          </div>
+          <div class="input-angle-container js-angle-picker">
+             <input type="text" class="angle-picker-input js-angle" value="90">
+             <span class="angle-degree">°</span>
+          </div>
+       </div>
+       <div class="info-container info-container-reverse">
+          <span class="info-text">Change angle</span>
+          <img src="./assets/image/left-arrow.svg" width="80px" height="64px" alt="Left Drawn Arrow" class="arrow d-lg-block d-none left-drawn-arrow"/>
+       </div>
+    </section>
+ </div>
+ <section class="code-editor">
+    <div class="code-editor-column">
+       <div class="code-editor-column-tabs"></div>
+       <div class="code-editor-column-numbers">
+          <span class="code-editor-column-number">1</span>
+          <span class="code-editor-column-number">2</span>
+          <span class="code-editor-column-number">3</span>
+          <span class="code-editor-column-number">4</span>
+          <span class="code-editor-column-number">5</span>
+          <span class="code-editor-column-number">6</span>
+       </div>
+    </div>
+    <div class="code-editor-block">
+       <div class="code-editor-tabs">
+          <div class="code-editor-tab css is-active">CSS</div>
+          <div class="code-editor-tab rgb">rgb</div>
+          <div class="code-editor-compat"></div>
+       </div>
+       <div class="code-editor-input">
+          <code class="code-editor-input-code" id="code">
+             <div class="gradient-code js-code-active">
+                <span class="blue">background</span><span>: -webkit-</span><span class="js-gradient-code">linear-gradient(90deg, #dd06a0, #19a6c3);</span><br>
+                <span class="blue">background</span><span>: -moz-</span><span class="js-gradient-code">linear-gradient(90deg, #dd06a0, #19a6c3);</span><br>
+                <span class="blue">background</span><span>: -ms-</span><span class="js-gradient-code">linear-gradient(90deg, #dd06a0, #19a6c3);</span><br>
+                <span class="blue">background</span><span>: -o-</span><span class="js-gradient-code">linear-gradient(90deg, #dd06a0, #19a6c3);</span><br>
+                <span class="blue">background</span><span>:&nbsp</span><span class="js-gradient-code">linear-gradient(90deg, #dd06a0, #19a6c3);</span><br>
+             </div>
+             <div class="rgb-code">
+                <span class="blue">background</span><span>: </span><span class="js-rgb-code">rgb(221, 6, 160);</span><br>
+                <span class="blue">background</span><span>: </span><span class="js-rgb-code">rgb(25, 166, 195);</span><br>
+             </div>
+          </code>
+       </div>
+    </div>
+    <section class="code-options">
+       <button data-clipboard-target="#code" class="code-option-button js-copy">
+          <div class="code-option-button-bg js-background-copy" style="background: linear-gradient(to right, #dd06a0, #19a6c3);"></div>
+          <div class="js-copy">
+             <img src="./assets/image/copy-icon.svg" width="24px" height="24px" alt="Copy Icon" class="copy-icon"/>
+             <span class="code-options-button-text">Copy to Clipboard</span>
+          </div>
+       </button>
+    </section>
+ </section>
+ <section class="d-flex flex-lg-row flex-column random-gradient-section">
+    <div class="info-container">
+       <span class="info-text">Generate random gradient</span>
+       <img src="./assets/image/right-arrow.svg" width="80px" height="64px" alt="Right Drawn Arrow" class="arrow d-lg-block d-none right-drawn-arrow"/>
+    </div>
+    <div class="svg-random">
+       <img src="./assets/image/random.svg" width="69px" height="69px" alt="Circle Arrow" class="circle-arrow"/>
+    </div>
+ </section>
+</div>
+ <app-footer></app-footer>

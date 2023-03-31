@@ -1,0 +1,6 @@
+<svg class="code-option-button-svg" width="13" height="17" xmlns="http://www.w3.org/2000/svg">
+               <g stroke="#ffffff" stroke-width="2" fill="none" fill-rule="evenodd">
+                  <path d="M5 5h7v11H5z"></path>
+                  <path d="M1 15V1h10"></path>
+               </g>
+            </svg>
