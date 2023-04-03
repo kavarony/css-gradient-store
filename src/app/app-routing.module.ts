@@ -7,6 +7,7 @@ const routes: Routes = [
   { path: 'header',  loadChildren: () => import('./header/header.module').then(m => m.HeaderModule)   },
   { path: 'footer',  loadChildren: () => import('./footer/footer.module').then(m => m.FooterModule)   },
   { path: 'about',  loadChildren: () => import('./about/about.module').then(m => m.AboutModule)   },
+  { path: 'contact',  loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)   },
   { path: '**', redirectTo: 'home'},
 ];
 
