@@ -8,6 +8,8 @@ const routes: Routes = [
   { path: 'footer',  loadChildren: () => import('./footer/footer.module').then(m => m.FooterModule)   },
   { path: 'about',  loadChildren: () => import('./about/about.module').then(m => m.AboutModule)   },
   { path: 'contact',  loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)   },
+  { path: 'sitemap',  loadChildren: () => import('./sitemap/sitemap.module').then(m => m.SitemapModule)   },
+  { path: 'robots',  loadChildren: () => import('./robots/robots.module').then(m => m.RobotsModule)   },
   { path: '**', redirectTo: 'home'},
 ];
 
