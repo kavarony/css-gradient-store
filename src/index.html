@@ -10,18 +10,21 @@
   <meta name="google-site-verification" content="M0tsMGXzff6nFndPzBhd_UX8J0TnRzR1g1EwAEiShgc" />
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5V45YEGB75"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    setTimeout(function() {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    gtag('config', 'G-5V45YEGB75');
+      gtag('config', 'G-5V45YEGB75');
+    }, 3500);
   </script>
 </head>
 <body>
   <app-root></app-root>
   <script src="assets/js/script.js" defer type="module" crossorigin="anonymous"></script>
+  <noscript><iframe src="https://www.googletagmanager.com/gtag/js?id=G-5V45YEGB75"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </body>
 </html>
 

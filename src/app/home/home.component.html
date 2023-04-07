@@ -8,12 +8,14 @@
           <img src="./assets/image/right-arrow.svg" width="80px" height="64px" alt="Right Drawn Arrow" class="arrow d-lg-block d-none right-drawn-arrow"/>
        </div>
        <div class="color-pickers-options">
-          <label class="color-picker-container" id="color-picker-container1">
-          <input type="color" class="color-picker" name="color1" value="#051937">
-          </label>
-          <label class="color-picker-container" id="color-picker-container2">
-          <input type="color" class="color-picker" name="color2" value="#A8EB12">
-          </label>
+         <label class="color-picker-container" for="colorpicker1" id="color-picker-container1">
+            <span class="visually-hidden">Select the first color:</span>
+           <input type="color" class="color-picker" name="color1" id="colorpicker1" value="#051937">
+         </label>
+         <label class="color-picker-container" for="colorpicker2" id="color-picker-container2">
+            <span class="visually-hidden">Select the second color:</span>
+           <input type="color" class="color-picker" name="color2" id="colorpicker2" value="#A8EB12">
+         </label>
        </div>
     </section>
     <section class="d-flex flex-lg-row flex-column flex-column-reverse angle-picker-section">
@@ -24,9 +26,9 @@
              </div>
           </div>
           <div class="input-angle-container js-angle-picker">
-             <input type="text" class="angle-picker-input js-angle" value="90">
-             <span class="angle-degree">°</span>
-          </div>
+            <input type="text" class="angle-picker-input js-angle" value="90" aria-label="Angle in degrees">
+            <span class="angle-degree">°</span>
+        </div>
        </div>
        <div class="info-container info-container-reverse">
           <span class="info-text">Change angle</span>
@@ -55,15 +57,15 @@
        <div class="code-editor-input">
           <code class="code-editor-input-code" id="code">
              <div class="gradient-code js-code-active">
-                <span class="blue">background</span><span>: -webkit-</span><span class="js-gradient-code">linear-gradient(90deg, #dd06a0, #19a6c3);</span><br>
-                <span class="blue">background</span><span>: -moz-</span><span class="js-gradient-code">linear-gradient(90deg, #dd06a0, #19a6c3);</span><br>
-                <span class="blue">background</span><span>: -ms-</span><span class="js-gradient-code">linear-gradient(90deg, #dd06a0, #19a6c3);</span><br>
-                <span class="blue">background</span><span>: -o-</span><span class="js-gradient-code">linear-gradient(90deg, #dd06a0, #19a6c3);</span><br>
-                <span class="blue">background</span><span>:&nbsp</span><span class="js-gradient-code">linear-gradient(90deg, #dd06a0, #19a6c3);</span><br>
+                <span class="blue">background</span><span class="carissma">: -webkit-</span><span class="js-gradient-code carissma">linear-gradient(90deg, #dd06a0, #19a6c3);</span><br>
+                <span class="blue">background</span><span class="carissma">: -moz-</span><span class="js-gradient-code carissma">linear-gradient(90deg, #dd06a0, #19a6c3);</span><br>
+                <span class="blue">background</span><span class="carissma">: -ms-</span><span class="js-gradient-code carissma">linear-gradient(90deg, #dd06a0, #19a6c3);</span><br>
+                <span class="blue">background</span><span class="carissma">: -o-</span><span class="js-gradient-code carissma">linear-gradient(90deg, #dd06a0, #19a6c3);</span><br>
+                <span class="blue">background</span><span class="carissma">:&nbsp</span><span class="js-gradient-code carissma">linear-gradient(90deg, #dd06a0, #19a6c3);</span><br>
              </div>
              <div class="rgb-code">
-                <span class="blue">background</span><span>: </span><span class="js-rgb-code">rgb(221, 6, 160);</span><br>
-                <span class="blue">background</span><span>: </span><span class="js-rgb-code">rgb(25, 166, 195);</span><br>
+                <span class="blue">background</span><span class="carissma">: </span><span class="js-rgb-code carissma">rgb(221, 6, 160);</span><br>
+                <span class="blue">background</span><span class="carissma">: </span><span class="js-rgb-code carissma">rgb(25, 166, 195);</span><br>
              </div>
           </code>
        </div>
