@@ -339,7 +339,7 @@ h2 {
 
 .code-option-button {
 	position: relative;
-	z-index: 9999;
+	z-index: 1029;
 	font-weight: 600;
 	line-height: 5.6rem;
 	width: 100%;
