@@ -40,12 +40,8 @@ body {
 	background: linear-gradient(90deg, #dd06a0, #19a6c3);
 	font-size: 16px;
 }
-
-.main-heading {
-	padding: 1rem 0;
-	font: 900 3.4rem Raleway, sans-serif;
-	width: 100%;
-	-webkit-text-stroke: 1px white
+.homesection{
+	padding-top: 5rem;
 }
 
 .angle-picker-section,
@@ -443,9 +439,6 @@ h2 {
 @media only screen and (max-width: 767px) {
 	.info-container--showed {
 		width: 50%;
-	}
-	.main-heading {
-		font: 900 1.5rem Raleway, sans-serif;
 	}
 	.info-text{
 		margin: 1rem 0rem;
