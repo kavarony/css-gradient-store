@@ -450,7 +450,7 @@ h2 {
     display: flex;
     align-content: center 
 }
-.container {
+.container-contrast {
     transition: .3s !important;
     background-color: #fff;
     margin-top: 8rem;
