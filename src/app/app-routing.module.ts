@@ -10,6 +10,7 @@ const routes: Routes = [
   { path: 'contact',  loadChildren: () => import('./contact/contact.module').then(m => m.ContactModule)   },
   { path: 'sitemap',  loadChildren: () => import('./sitemap/sitemap.module').then(m => m.SitemapModule)   },
   { path: 'robots',  loadChildren: () => import('./robots/robots.module').then(m => m.RobotsModule)   },
+  { path: 'color-contrast-checker',  loadChildren: () => import('./color-contrast-checker/color-contrast-checker.module').then(m => m.ColorContrastCheckerModule)   },
   { path: '**', redirectTo: 'home'},
 ];
 

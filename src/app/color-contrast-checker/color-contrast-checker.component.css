@@ -1,0 +1,362 @@
+.box-contrast-ratio, .box-pass-fail {
+    background: #fdfdfd;
+    display: flex;
+    align-content: center 
+}
+.container {
+    transition: .3s !important;
+    background-color: #fff;
+    margin-top: 8rem;
+    margin-bottom: 2.5rem;
+    border-radius: 10px;
+    padding-bottom: 0.8rem;
+}
+#row-header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    padding: 0.9rem 15px 45px;
+    gap: 30px 30px;
+    transition: gap .3s 
+}
+.box-header {
+    order: 4;
+    flex-basis: 250px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 120px;
+    margin: 0;
+    padding: 5px 0 0 10px;
+    color: #4a4a4a;
+}
+.box-header::-webkit-scrollbar, .box-header::-webkit-scrollbar-thumb, .box-header::-webkit-scrollbar-track {
+    display: none 
+}
+.box-header h1 {
+    margin: 0 0 3px 
+}
+.box-header h1, .box-header p {
+    white-space: nowrap 
+}
+.box-header a, .box-header p, .box-header ul li {
+    margin: 0;
+    font-size: 11px 
+}
+.box-header p a:after {
+    content: "\e89e";
+    font-family: "Material Icons";
+    font-size: 9px 
+}
+.box-header ul li b {
+    display: inline-block;
+    width: 78px !important 
+}
+.box-contrast-ratio {
+    flex-basis: 220px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 120px;
+    margin: 0;
+    padding: 20px 0;
+    color: #4a4a4a;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 4px 
+}
+#contrast-label, .contrast-val-text {
+    flex-basis: 100%;
+    text-align: center;
+    line-height: 100%;
+    margin: 0 
+}
+#contrast-label {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 0 10px 
+}
+.contrast-val-text {
+    font-size: 48px;
+    font-weight: 500;
+    padding: 0 
+}
+.box-pass-fail {
+    flex-basis: 160px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 120px;
+    margin: 0;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 4px 
+}
+.pass-fail-label, .pass-fail-sublabel, .pass-fail-val {
+    color: #4a4a4a;
+    font-size: 18px;
+    line-height: 100% 
+}
+.pass-fail-label {
+    flex-basis: 100%;
+    padding: 0 0 12px;
+    margin: 0;
+    text-align: center;
+    font-weight: 500 
+}
+.pass-fail-sublabel:nth-child(2), .pass-fail-val:nth-child(3) {
+    padding: 0 0 10px !important 
+}
+.pass-fail-sublabel {
+    flex-basis: 50%;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    font-weight: 400 
+}
+.pass-fail-val {
+    flex-basis: 50%;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+    font-weight: 700;
+    transition: color .2s linear 
+}
+#large-val-aa, #large-val-aaa, #normal-val-aa {
+    color: #008a17 
+}
+#normal-val-aaa {
+    color: #eb0000 
+}
+@media(max-width:991px) {
+    .box-header {
+        flex-basis: 100%;
+        order: 1;
+        padding: 3px 7.5px 0 
+   }
+    .box-contrast-ratio {
+        order: 2 
+   }
+    .box-pass-fail {
+        order: 3 
+   }
+}
+.box-color-selector {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    transition: padding .2s 
+}
+@media(max-width:1199px) {
+    #row-header {
+        gap: 15px 15px 
+   }
+    .box-color-selector:first-child {
+        padding-right: 7.5px 
+   }
+    .box-color-selector:nth-child(2) {
+        padding-left: 7.5px 
+   }
+}
+.form-hex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-basis: 100%;
+    gap: 0 10px;
+    margin: 0 
+}
+#label-text-a, #label-text-b {
+    flex-basis: 100%;
+    margin: 0 0 5px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #767676 
+}
+.input-color-picker, .input-text {
+    position: relative;
+    display: block;
+    height: 40px;
+    line-height: 28px;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, .2) 
+}
+.input-text {
+    flex-basis: calc(85% - 10px);
+    text-transform: uppercase;
+    padding: 0 7.5px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #333 
+}
+.input-text:hover {
+    border: 1px solid rgba(0, 0, 0, .3) 
+}
+.input-text:focus {
+    outline: rgba(0, 0, 0, .1) dashed 1px !important;
+    outline-offset: 3px;
+    border: 1px solid rgba(0, 0, 0, .5) 
+}
+.input-text::selection {
+    background: #d9d9d9 
+}
+.input-color-picker {
+    flex-basis: 15%;
+    -webkit-appearance: none;
+    padding: 3px;
+    background: #fff;
+    border-radius: 2px;
+    cursor: pointer;
+    color: #fff 
+}
+.input-color-picker:hover {
+    border: 1px solid rgba(0, 0, 0, .35);
+    padding: 2px;
+    background: #f9f9f9 
+}
+.input-color-picker:focus {
+    padding: 2px;
+    border: 1px solid rgba(0, 0, 0, .4);
+    outline: rgba(0, 0, 0, .1) dashed 1px !important;
+    outline-offset: 3px;
+    background: #f9f9f9 
+}
+.input-color-picker::-webkit-color-swatch, .input-color-picker::-webkit-color-swatch-wrapper {
+    padding: 0;
+    border-radius: 2px;
+    border: none;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .2) inset 
+}
+.input-color-picker:focus::-webkit-color-swatch .input-color-picker:hover::-webkit-color-swatch-wrapper, .input-color-picker:focus::-webkit-color-swatch-wrapper, .input-color-picker:hover::-webkit-color-swatch {
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .3) inset 
+}
+.input-color-picker:after {
+    position: absolute;
+    content: "\e3c9";
+    top: 5px;
+    right: 14px;
+    width: 20%;
+    transform: rotate(0);
+    text-align: center;
+    font-family: "Material Icons";
+    font-size: 16px;
+    z-index: 500;
+    transition: transform .4s ease-in, color .2s linear 
+}
+.input-color-picker:focus:after, .input-color-picker:hover:after {
+    transform: rotate(360deg);
+    transition: transform .5s .1s, color .2s linear 
+}
+.box-values {
+    flex-basis: 100% 
+}
+.box-values:first-of-type {
+    margin: 10px 0 0 
+}
+.value-data, .value-label {
+    display: inline 
+}
+.value-label {
+    font-weight: 600 
+}
+.box-color-target {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    flex-basis: 100%;
+    min-width: 300px;
+    height: 50vh;
+    min-height: 300px;
+    max-height: 500px;
+    margin: 15px 0 0;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 4px 
+}
+#box-color-target-a {
+    color: #edfaee;
+    background-color: #41759f 
+}
+#box-color-target-b {
+    color: #41759f;
+    background-color: #edfaee 
+}
+.alt-color {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #767676 
+}
+@media(max-width:767px) {
+    #row-header {
+        padding: 5vh 15px 35px;
+        gap: 20px 20px 
+   }
+    .box-contrast-ratio {
+        flex-basis: 100%;
+        order: 2;
+        height: 110px 
+   }
+    .box-pass-fail {
+        flex-basis: calc(50% - 10px);
+        order: 3;
+        padding: 15px;
+        justify-content: center;
+        height: 110px 
+   }
+    .pass-fail-sublabel, .pass-fail-val {
+        flex-basis: 40% 
+   }
+    .box-color-selector:first-child {
+        padding-right: 15px 
+   }
+    .box-color-selector:nth-child(2) {
+        padding-left: 15px 
+   }
+    .box-color-target {
+        min-width: initial;
+        height: 160px;
+        min-height: initial;
+        max-height: initial;
+        margin: 7.5px 0 30px;
+        border: 1px solid rgba(0, 0, 0, .2);
+        border-radius: 4px 
+   }
+}
+.box-text-sample {
+    flex-basis: 100%;
+    margin: 0 
+}
+.box-color-readout {
+    flex-basis: 40%;
+    margin: 25px 0 0 
+}
+.box-color-target h2, .box-color-target h3, .box-color-target p {
+    width: 100%;
+    text-align: center 
+}
+.box-color-target h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0 
+}
+.box-color-target h3, .box-color-target p {
+    font-size: 16px 
+}
+.box-color-target h3 {
+    font-weight: 600;
+    margin: 0 
+}
+.box-color-target p {
+    font-weight: 400;
+    margin: 0 
+}
+.list-group-items{
+    list-style: none;
+}
