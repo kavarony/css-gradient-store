@@ -39,7 +39,7 @@ body {
 	height: 100%;
 	font-family: Raleway, sans-serif;
 	color: rgba(0, 0, 0, .6);
-	background: linear-gradient(90deg, #dd06a0, #19a6c3)
+	background: linear-gradient(90deg, #DD06A0, #1AA5C3)
 }
 
 h1 {
@@ -123,13 +123,13 @@ h1 {
 }
 
 #color-picker-container1 {
-	background: #dd06a0;
+	background: #DD06A0;
 	transform: translateX(2rem);
 	opacity: 1
 }
 
 #color-picker-container2 {
-	background: #19a6c3;
+	background: #1AA5C3;
 	transform: translateX(-2rem);
 	opacity: 1
 }

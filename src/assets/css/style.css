@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Indie+Flower|Work+Sans:400,600&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat&display=swap);
 @import url(../css/material-icon.css);
 
 body,
@@ -36,9 +36,9 @@ html {
 
 body {
 	height: 100%;
-	font-family: Raleway, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	color: rgba(0, 0, 0, .6);
-	background: linear-gradient(90deg, #dd06a0, #19a6c3);
+	background: linear-gradient(90deg, #DD06A0, #1AA5C3);
 	font-size: 16px;
 }
 .homesection{
@@ -74,7 +74,7 @@ body {
 
 .info-text {
 	user-select: none;
-	font-family: 'Indie Flower', cursive;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 1.5rem;
 	letter-spacing: .3rem;
 	color: #f0f8ff;
@@ -120,13 +120,13 @@ body {
 }
 
 #color-picker-container1 {
-	background: #dd06a0;
+	background: #DD06A0;
 	transform: translateX(2rem);
 	opacity: 1
 }
 
 #color-picker-container2 {
-	background: #19a6c3;
+	background: #1AA5C3;
 	transform: translateX(-2rem);
 	opacity: 1
 }
@@ -180,7 +180,7 @@ body {
 }
 
 .angle-picker-input {
-	font-family: "Work Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 1rem;
 	font-weight: 700;
 	color: #c4c5cf;
@@ -212,7 +212,7 @@ body {
 
 h2 {
 	margin: 3rem 0;
-	font: 2rem Raleway, sans-serif;
+	font: 2rem 'Montserrat', sans-serif;
 }
 
 .code-editor {
@@ -245,7 +245,7 @@ h2 {
 }
 
 .code-editor-column-number {
-	font-family: monospace !important;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 1rem;
 	font-weight: 700;
 	line-height: 1.4rem;
@@ -260,7 +260,7 @@ h2 {
 
 .code-editor-tab,
 .code-option-button {
-	font-family: "Work Sans", "Helvetica Neue", Helvetica, Helvetica, Arial, sans-serif
+	font-family: 'Montserrat', sans-serif;
 }
 
 .code-editor-block {
